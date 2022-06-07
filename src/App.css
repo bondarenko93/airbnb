@@ -90,3 +90,8 @@
     bottom: 46px;
   }
 }
+@media (max-width:740px) {
+  .img_block img {
+    max-height: 278px;
+  }
+}
