@@ -55,7 +55,7 @@ let Gallery = [
 export const Carousel = ({ centeredSlides = true, slidesPerView = 4, spaceBetween = 30 }) => {
     const slides = Gallery.map(
         (el, index) => <>
-            <div className="max-w-xs shadow-xl w-auto md:max-w-md">
+            <div className="max-w-xs shadow-xl w-auto md:max-w-md rounded-lg">
                 <img className="rounded-lg" src={el.img} alt="text" />
             </div>
             <div className="swiper-content w-auto md:max-w-md">
