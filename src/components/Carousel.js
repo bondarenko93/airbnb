@@ -11,27 +11,27 @@ import { PrevArrow } from "./svg/Prev";
 let Gallery = [
     {
         img: "https://a0.muscache.com/im/pictures/31fb3cb1-c2a1-4e14-a9e9-6f279991790b.jpg?im_w=720",
-        desc: 'Receiving guests changed my life, gave me unforgettable impressions and friends.',
+        desc: 'Hosting my studio changed my life and gifted me with memorable experiences and people.',
         from: 'Hostess from Milan',
         thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
     },
     {
         img: "https://a0.muscache.com/im/pictures/4f3047b2-58ea-4335-8430-dfc6f436634d.jpg?im_w=720",
         desc: 'Receiving guests changed my life, gave me unforgettable impressions and friends.',
-        from: 'Hostess from Milan',
+        from: 'Host in Chiang Mai',
         thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
     },
     {
         img: "https://a0.muscache.com/im/pictures/a464d642-695e-4d2c-aa51-2302de067f45.jpg?im_w=720",
-        desc: 'Receiving guests changed my life, gave me unforgettable impressions and friends.',
+        desc: 'We’re able to keep our culture alive by hosting our pasta-making experience.',
         from: 'Hostess from Milan',
         thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
     },
     {
-        img: "https://a0.muscache.com/im/pictures/d8627b07-b42c-40a1-807f-1eac9de39311.jpg?im_w=720",
-        desc: 'Receiving guests changed my life, gave me unforgettable impressions and friends.',
-        from: 'Hostess from Milan',
-        thumb: 'https://a0.muscache.com/im/pictures/b56f3d7c-5006-4ed2-967a-c421e3275b1f.jpg?im_w=240',
+        img: "https://a0.muscache.com/im/pictures/b56f3d7c-5006-4ed2-967a-c421e3275b1f.jpg?im_w=720",
+        desc: 'Airbnb has allowed me to create my own job doing what I love – taking care of guests in our home.',
+        from: 'Host in Wadi Rum',
+        thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
     }, 
     {
         img: "https://a0.muscache.com/im/pictures/4f3047b2-58ea-4335-8430-dfc6f436634d.jpg?im_w=720",
@@ -40,7 +40,7 @@ let Gallery = [
         thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
     },
     {
-        img: "https://a0.muscache.com/im/pictures/334530d8-2ad6-40e8-8fd2-4ac0835e693a?im_w=720",
+        img: "https://a0.muscache.com/im/pictures/334530d8-2ad6-40e8-8fd2-4ac0835e693a.jpg?im_w=720",
         desc: 'Receiving guests changed my life, gave me unforgettable impressions and friends.',
         from: 'Hostess from Milan',
         thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
