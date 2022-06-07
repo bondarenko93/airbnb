@@ -8,13 +8,62 @@ import "swiper/css/pagination";
 import { NextArrow } from "./svg/Next";
 import { PrevArrow } from "./svg/Prev";
 
-let MoreText = 'Hosting guests, I was able to become an entrepreneur and take a step towards financial independence.';
-let Img = 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240';
-let From = 'Hostess from Milan';
+let Gallery = [
+    {
+        img: "https://a0.muscache.com/im/pictures/31fb3cb1-c2a1-4e14-a9e9-6f279991790b.jpg?im_w=720",
+        desc: 'Receiving guests changed my life, gave me unforgettable impressions and friends.',
+        from: 'Hostess from Milan',
+        thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
+    },
+    {
+        img: "https://a0.muscache.com/im/pictures/4f3047b2-58ea-4335-8430-dfc6f436634d.jpg?im_w=720",
+        desc: 'Receiving guests changed my life, gave me unforgettable impressions and friends.',
+        from: 'Hostess from Milan',
+        thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
+    },
+    {
+        img: "https://a0.muscache.com/im/pictures/a464d642-695e-4d2c-aa51-2302de067f45.jpg?im_w=720",
+        desc: 'Receiving guests changed my life, gave me unforgettable impressions and friends.',
+        from: 'Hostess from Milan',
+        thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
+    },
+    {
+        img: "https://a0.muscache.com/im/pictures/d8627b07-b42c-40a1-807f-1eac9de39311.jpg?im_w=720",
+        desc: 'Receiving guests changed my life, gave me unforgettable impressions and friends.',
+        from: 'Hostess from Milan',
+        thumb: 'https://a0.muscache.com/im/pictures/b56f3d7c-5006-4ed2-967a-c421e3275b1f.jpg?im_w=240',
+    }, 
+    {
+        img: "https://a0.muscache.com/im/pictures/4f3047b2-58ea-4335-8430-dfc6f436634d.jpg?im_w=720",
+        desc: 'Receiving guests changed my life, gave me unforgettable impressions and friends.',
+        from: 'Hostess from Milan',
+        thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
+    },
+    {
+        img: "https://a0.muscache.com/im/pictures/334530d8-2ad6-40e8-8fd2-4ac0835e693a?im_w=720",
+        desc: 'Receiving guests changed my life, gave me unforgettable impressions and friends.',
+        from: 'Hostess from Milan',
+        thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
+    },
+    {
+        img: "https://a0.muscache.com/im/pictures/4f3047b2-58ea-4335-8430-dfc6f436634d.jpg?im_w=720",
+        desc: 'Receiving guests changed my life, gave me unforgettable impressions and friends.',
+        from: 'Hostess from Milan',
+        thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
+    }
+];
 export const Carousel = ({ centeredSlides = true, slidesPerView = 4, spaceBetween = 30 }) => {
-
-    const slides = Array.from({ length: 10 }).map(
-        (el, index) => <><div key={index} className="text-base mt-8 mb-6 md:text-2xl md:my-12">{MoreText}</div><div className="block w-auto h-8"><img className="object-contain h-full" src={Img} alt="text" /></div><div className="mt-3 md:mt-6 md:text-base text-gray-500" >{From}</div></>
+    const slides = Gallery.map(
+        (el, index) => <>
+            <div className="max-w-xs shadow-xl w-auto md:max-w-md">
+                <img src={el.img} alt="text" />
+            </div>
+            <div className="swiper-content w-auto md:max-w-md">
+                <div key={index} className="text-base mt-8 mb-6 md:text-2xl md:my-12">{el.desc}</div>
+                <div className="block w-auto h-8"><img className="object-contain h-full" src={el.thumb} alt="text" />
+                </div><div className="mt-3 md:mt-6 md:text-base text-gray-500" >{el.from}</div>
+            </div>
+        </>
     );
     return (
         <div className="image-swiper relative">
@@ -42,12 +91,9 @@ export const Carousel = ({ centeredSlides = true, slidesPerView = 4, spaceBetwee
             >
                 {slides.map((slideContent, index) => (
                     <SwiperSlide className="w-4/5 md:w-auto" key={index} virtualIndex={index}>
-                        <div className="max-w-xs shadow-xl w-auto md:max-w-md">
-                            <img src="https://a0.muscache.com/im/pictures/31fb3cb1-c2a1-4e14-a9e9-6f279991790b.jpg?im_w=720" alt="text" />
-                        </div>
-                        <div className="swiper-content w-auto md:max-w-md">
-                            {slideContent}
-                        </div>
+                        {slideContent}
+
+
                     </SwiperSlide>
                 ))}
             </Swiper>
