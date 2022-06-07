@@ -7,6 +7,26 @@
   opacity: 1;
 }
 
+.img_block {
+  max-width: 440px;
+  max-height: 440px;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.max-w-440 {
+  max-width: 440px;
+
+}
+
+.img_block img {
+  object-fit: cover;
+  display: block;
+  max-height: 440px;
+  width: 100%;
+}
 
 .arrow::before {
   content: "";
@@ -51,9 +71,9 @@
 
 
 .navigation-elemnts {
-  position: absolute ;
+  position: absolute;
   bottom: 32px;
-  right: 24px ;
+  right: 24px;
   z-index: 2;
 }
 

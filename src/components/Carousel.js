@@ -32,7 +32,7 @@ let Gallery = [
         desc: 'Airbnb has allowed me to create my own job doing what I love – taking care of guests in our home.',
         from: 'Host in Wadi Rum',
         thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
-    }, 
+    },
     {
         img: "https://a0.muscache.com/im/pictures/4f3047b2-58ea-4335-8430-dfc6f436634d.jpg?im_w=720",
         desc: 'Receiving guests changed my life, gave me unforgettable impressions and friends.',
@@ -52,14 +52,14 @@ let Gallery = [
         thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
     }
 ];
-export const Carousel = ({ centeredSlides = true, slidesPerView = 4, spaceBetween = 30 }) => {
+export const Carousel = ({ centeredSlides = true, slidesPerView = 3, spaceBetween = 30 }) => {
     const slides = Gallery.map(
         (el, index) => <>
-            <div className="max-w-xs shadow-xl w-auto md:max-w-md rounded-lg">
+            <div className="shadow-xl w-auto img_block rounded-lg">
                 <img className="rounded-lg" src={el.img} alt="text" />
             </div>
             <div className="swiper-content w-auto md:max-w-md">
-                <div key={index} className="text-base mt-8 mb-6 md:text-2xl md:my-12">{el.desc}</div>
+                <div key={index} className="text-base mt-8 mb-6 md:text-2xl md:mt-12 md:mb-14">{el.desc}</div>
                 <div className="block w-auto h-8"><img className="object-contain h-full" src={el.thumb} alt="text" />
                 </div><div className="mt-3 md:mt-6 md:text-base text-gray-500" >{el.from}</div>
             </div>
@@ -71,6 +71,7 @@ export const Carousel = ({ centeredSlides = true, slidesPerView = 4, spaceBetwee
                 slidesPerView={slidesPerView}
                 spaceBetween={spaceBetween}
                 centeredSlides={centeredSlides}
+                grabCursor={true}
                 breakpoints={{
                     320: {
                         slidesPerView: "auto",
@@ -82,7 +83,7 @@ export const Carousel = ({ centeredSlides = true, slidesPerView = 4, spaceBetwee
                     },
                     640: {
                         slidesPerView: "auto",
-                        spaceBetween: 40
+                        spaceBetween: 18
                     }
                 }}
                 navigation={{ prevEl: '.prev', nextEl: '.next' }}
@@ -90,7 +91,7 @@ export const Carousel = ({ centeredSlides = true, slidesPerView = 4, spaceBetwee
                 className="mySwiper"
             >
                 {slides.map((slideContent, index) => (
-                    <SwiperSlide className="w-4/5 md:w-auto" key={index} virtualIndex={index}>
+                    <SwiperSlide className="w-4/5 max-w-440" key={index} virtualIndex={index}>
                         {slideContent}
 
 
