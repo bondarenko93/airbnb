@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.swiper-content {
+  opacity: 0;
+  transition: visibility .33s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.swiper-slide-active .swiper-content {
+  opacity: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.arrow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #EBEBEB;
+}
+
+.prev.swiper-button-disabled .arrow::before,
+.next.swiper-button-disabled .arrow::before {
+  background: transparent;
+
+}
+
+.prev.swiper-button-disabled .arrow svg,
+.next.swiper-button-disabled .arrow svg {
+  stroke: #a7a5a5 !important;
+}
+
+.arrow {
+  appearance: none;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0px;
+  padding: 0px;
+  color: #222222;
+  background-color: transparent;
+  cursor: pointer;
+  touch-action: manipulation;
+  position: relative;
+  background: transparent;
+  transition: -ms-transform 0.25s ease, -webkit-transform 0.25s ease, transform 0.25s ease;
+}
+
+.navigation-elemnts {
+  position: absolute ;
+  bottom: 32px;
+  right: 24px ;
+  z-index: 2;
+}
+
+@media (min-width: 1128px) {
+  .navigation-elemnts {
+    right: -webkit-calc(33.3% + 16px);
+    right: -moz-calc(33.3% + 16px);
+    right: calc(33.3% + 16px);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (min-width: 744px) {
+  .navigation-elemnts {
+    bottom: 46px;
   }
 }
