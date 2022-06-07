@@ -15,7 +15,7 @@ export default {
             control: { type: 'number', min: 1, max: 7, step: 1 }
         },
         spaceBetween: {
-            control: { type: 'number', min: 10, max: 60, step: 5 }
+            control: { type: 'number', min: 8, max: 24, step: 2 }
         }
     }
 }
