@@ -60,8 +60,7 @@ export const Carousel = ({ centeredSlides = true, slidesPerView = 3, spaceBetwee
             </div>
             <div className="swiper-content w-auto md:max-w-md">
                 <div key={index} className="text-base mt-8 mb-6 md:text-2xl md:mt-12 md:mb-14">{el.desc}</div>
-                <div className="block w-auto h-8"><img className="object-contain h-full" src={el.thumb} alt="text" />
-                </div><div className="mt-3 md:mt-6 md:text-base text-gray-500" >{el.from}</div>
+                <div className=" md:text-base text-gray-500" >{el.from}</div>
             </div>
         </>
     );
