@@ -56,7 +56,7 @@ export const Carousel = ({ centeredSlides = true, slidesPerView = 4, spaceBetwee
     const slides = Gallery.map(
         (el, index) => <>
             <div className="max-w-xs shadow-xl w-auto md:max-w-md">
-                <img src={el.img} alt="text" />
+                <img className="rounded-lg" src={el.img} alt="text" />
             </div>
             <div className="swiper-content w-auto md:max-w-md">
                 <div key={index} className="text-base mt-8 mb-6 md:text-2xl md:my-12">{el.desc}</div>
