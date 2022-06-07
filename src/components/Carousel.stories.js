@@ -30,6 +30,6 @@ const Template = ({ centeredSlides, spaceBetween, slidesPerView, ...rest }) => {
 export const Default = Template.bind({});
 Default.args = {
     centeredSlides: true,
-    slidesPerView: 4,
-    spaceBetween: 30,
+    slidesPerView: 3,
+    spaceBetween: 18,
 }

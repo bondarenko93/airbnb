@@ -52,7 +52,7 @@ let Gallery = [
         thumb: 'https://a0.muscache.com/im/pictures/f2b0e082-6872-47a3-a9f6-d01a9c44a088.jpg?im_w=240',
     }
 ];
-export const Carousel = ({ centeredSlides = true, slidesPerView = 3, spaceBetween = 30 }) => {
+export const Carousel = ({ centeredSlides = true, slidesPerView = 3, spaceBetween = 18 }) => {
     const slides = Gallery.map(
         (el, index) => <>
             <div className="shadow-xl w-auto img_block rounded-lg">
@@ -75,15 +75,12 @@ export const Carousel = ({ centeredSlides = true, slidesPerView = 3, spaceBetwee
                 breakpoints={{
                     320: {
                         slidesPerView: "auto",
-                        spaceBetween: 20
                     },
                     480: {
                         slidesPerView: "auto",
-                        spaceBetween: 30
                     },
                     640: {
                         slidesPerView: "auto",
-                        spaceBetween: 18
                     }
                 }}
                 navigation={{ prevEl: '.prev', nextEl: '.next' }}
