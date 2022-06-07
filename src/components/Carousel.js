@@ -59,7 +59,7 @@ export const Carousel = ({ centeredSlides = true, slidesPerView = 3, spaceBetwee
                 <img className="rounded-lg" src={el.img} alt="text" />
             </div>
             <div className="swiper-content w-auto md:max-w-md">
-                <div key={index} className="text-base mt-8 mb-6 md:text-2xl md:mt-12 md:mb-14">{el.desc}</div>
+                <div key={index} className="text-base mt-9 mb-6 md:text-2xl md:mt-12 md:mb-14">{el.desc}</div>
                 <div className=" md:text-base text-gray-500" >{el.from}</div>
             </div>
         </>
