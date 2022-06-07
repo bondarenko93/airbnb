@@ -49,6 +49,7 @@
   transition: -ms-transform 0.25s ease, -webkit-transform 0.25s ease, transform 0.25s ease;
 }
 
+
 .navigation-elemnts {
   position: absolute ;
   bottom: 32px;
